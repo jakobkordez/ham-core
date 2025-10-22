@@ -345,6 +345,9 @@ importers:
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@9.34.0(jiti@1.21.7))
+      jszip:
+        specifier: ^3.10.1
+        version: 3.10.1
       path:
         specifier: ^0.12.7
         version: 0.12.7
