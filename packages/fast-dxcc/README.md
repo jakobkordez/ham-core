@@ -9,7 +9,7 @@ Data about countries can be downloaded from either [Amateur Radio Country Files 
 Download any `cty.dat` file from the [Country Files](https://www.country-files.com/) website. I recommend using the [Big CTY](https://www.country-files.com/big-cty/) file.
 Instead of `cty.dat` you can also use the `cty.csv` file.
 
-Parsing of `cty.dat` or `cty.csv` can be done with the script [`cty-parser.ts`](./scripts/cty-dat-parser.ts).
+Parsing of `cty.dat` or `cty.csv` can be done with the script [`cty-parser.ts`](./scripts/cty-parser.ts).
 
 `Note:` The `cty.dat` does not contain the `adif` DXCC number.
 
