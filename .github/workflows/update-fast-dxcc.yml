@@ -48,7 +48,5 @@ jobs:
             git push
 
             # Publish to NPM
-            npm publish --provenance --access public
+            npm publish
           fi
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
