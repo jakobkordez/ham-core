@@ -4,12 +4,13 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
   update-fast-dxcc:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,7 +25,7 @@ jobs:
       - name: Build package
         working-directory: packages/fast-dxcc
         run: pnpm build
-      - name: Commit and publish to NPM
+      - name: Bump version and push changes
         working-directory: packages/fast-dxcc
         run: |
           # Check for changes
@@ -46,7 +47,7 @@ jobs:
             git add package.json
             git commit -m "chore: Update fast-dxcc"
             git push
-
-            # Publish to NPM
-            npm publish
           fi
+      - name: Publish to NPM
+        working-directory: packages/fast-dxcc
+        run: npx publish-if-not-exists
