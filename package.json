@@ -1,6 +1,7 @@
 {
   "name": "ham-core",
   "version": "1.0.0",
+  "private": true,
   "description": "A monorepo with Ham radio packages and apps",
   "keywords": [],
   "author": "Jakob Kordež S52KJ",

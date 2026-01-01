@@ -10,7 +10,7 @@
 	],
 	"author": "Jakob Kordež",
 	"license": "MIT",
-	"private": false,
+	"private": true,
 	"scripts": {
 		"dev": "tsup --watch",
 		"build": "tsup",
