@@ -1,6 +1,6 @@
 {
 	"name": "@ham-core/fast-dxcc",
-	"version": "2.44.0",
+	"version": "2.45.0",
 	"description": "Fast implementation for getting information about a callsign",
 	"repository": {
 		"type": "git",
